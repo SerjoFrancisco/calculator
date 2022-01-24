@@ -9,9 +9,14 @@ function putNumber(){
   panel.value += number.innerText
 }
 function doMath(){
+    const checker = panel.value;
+    console.log(parseFloat(checker));
+    if(!parseFloat(checker)){
+        panel.value = 'Ta fazendo conta errado!'
+    }else{
     history.innerText += `${panel.value};`;
     panel.value = eval(panel.value);
-}
+}}
 
 function clearPanel(){
     panel.value='';
