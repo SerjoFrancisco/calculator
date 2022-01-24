@@ -4,29 +4,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Calculator</title>
   </head>
   <body>
-       <form id="calculator" onsubmit="return false">
-           <input type="text" name="" id="panel">
-           <div id='clear'>C</div>
-           <div class="digits">1</div>
-           <div class="digits">2</div>
-           <div class="digits">3</div>
-           <div class="digits">4</div>
-           <div class="digits">5</div>
-           <div class="digits">6</div>
-           <div class="digits">7</div>
-           <div class="digits">8</div>
-           <div class="digits">9</div>
-           <div class="digits">0</div>
-           <div class="digits">+</div>
-           <div class="digits">-</div>
-           <div class="digits">*</div>
-           <div class="digits">/</div>
-           <button id="equal" type="submit">=</button>
-       </form>
-      <script src="script.js"></script>
+    <header>Calculator</header>
+    <form id="calculator" onsubmit="return false">
+      <input type="text" name="" id="panel" />
+      <div id="clear">C</div>
+      <div class="digits">1</div>
+      <div class="digits">2</div>
+      <div class="digits">3</div>
+      <div class="digits">4</div>
+      <div class="digits">5</div>
+      <div class="digits">6</div>
+      <div class="digits">7</div>
+      <div class="digits">8</div>
+      <div class="digits">9</div>
+      <div class="digits">0</div>
+      <div class="digits">+</div>
+      <div class="digits">-</div>
+      <div class="digits">*</div>
+      <div class="digits">/</div>
+      <button id="equal" type="submit">=</button>
+    </form>
+    <footer>
+        History
+        <div id="history"></div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>

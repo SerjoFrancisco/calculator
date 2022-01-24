@@ -1,3 +1,11 @@
+header{
+    width: 100%;
+    background-color: orchid;
+    height: 48px;
+    text-align: center;
+    font-family: 'Comforter Brush', cursive;
+    font-size: 40px;
+}
 .digits {
    border: 1px solid black;
    background-color: gray;
@@ -22,9 +30,12 @@
 #calculator {
     width: 200px;
     border: 2px solid red;
+    display: block;
+    margin: 15% auto;
+    
 }
 #panel{
-    margin-bottom: 5px;
+    margin-bottom: 0px;
 }
 #clear{
     border: 1px solid black;
@@ -35,4 +46,15 @@
     display: inline-block;
     margin: -2px;
     text-align: center;
+}
+#clear:hover{
+    background-color: orangered;
+}
+footer{
+    text-align: center;
+    background-color: palegreen;
+    height: 48px;
+    width: 100%;
+    font-family: 'Open Sans', serif;
+    font-size: 18px;
 }
