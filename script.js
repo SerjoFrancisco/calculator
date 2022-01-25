@@ -10,7 +10,6 @@ function putNumber(){
 }
 function doMath(){
     const test = /([A-Za-z])/g.test(panel.value)
-    console.log(test);
     if(test){
         panel.value = 'Ta fazendo conta errado!'
     }else{
@@ -20,6 +19,7 @@ function doMath(){
 
 function clearPanel(){
     panel.value='';
+    history.innerText=''
 }
 function listenAll() {
     for (let i = 0; i < numbers.length; i += 1) {
