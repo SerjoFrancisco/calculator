@@ -9,9 +9,9 @@ function putNumber(){
   panel.value += number.innerText
 }
 function doMath(){
-    const checker = panel.value;
-    console.log(parseFloat(checker));
-    if(!parseFloat(checker)){
+    const test = /([A-Za-z])/g.test(panel.value)
+    console.log(test);
+    if(test){
         panel.value = 'Ta fazendo conta errado!'
     }else{
     history.innerText += `${panel.value};`;
